@@ -19,7 +19,6 @@ import br.com.pan.bluebank.dtos.response.MessageResponse;
 import br.com.pan.bluebank.dtos.response.MessageResponseImpl;
 import br.com.pan.bluebank.models.Cliente;
 import br.com.pan.bluebank.services.ClienteService;
-import br.com.pan.bluebank.services.EmailNotificationService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

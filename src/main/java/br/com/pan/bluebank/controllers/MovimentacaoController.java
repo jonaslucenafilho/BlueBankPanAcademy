@@ -32,11 +32,12 @@ public class MovimentacaoController implements MessageResponse, MovimentacaoDocs
 	@GetMapping(path = "/{origemId}")
 	public ResponseEntity<MovimentacaoResponseDTO> findById(@PathVariable Long origemId){
 		return ResponseEntity.ok(this.service.findByIdResponse(origemId));
+
 	}
 
 	@GetMapping
 	public ResponseEntity<Page<MovimentacaoResponseDTO>> findAll(Pageable page) {
-			return ResponseEntity.ok(this.service.findAll(page));
+			return ResponseEntity.ok(this.service.findAllPageable(page));
 	}		
 	
 	@PostMapping

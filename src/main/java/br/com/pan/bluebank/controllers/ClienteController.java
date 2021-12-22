@@ -51,5 +51,6 @@ public class ClienteController implements MessageResponse, ClienteDocs {
 		@RequestBody ClienteDTO dto) {
 		this.service.update(id, dto);
 		return ResponseEntity.ok(createMessageResponse("Cliente atualizado com sucesso!"));
-	}  
+	}
+		
 }
